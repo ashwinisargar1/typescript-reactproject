@@ -9,7 +9,7 @@ const initialState: CategoryState = {
     error: null,
 };
 
-// Async Thunks
+
 export const fetchCategories = createAsyncThunk('categories/fetchCategories', async () => {
     const response = await api.getCategories();
     return response;
@@ -59,7 +59,6 @@ const categorySlice = createSlice({
 
 export const { } = categorySlice.actions;
 
-// Selectors
 export const selectAllCategories = (state: { categories: CategoryState }) => state.categories.categories;
 
 export const selectCategoriesStatus = (state: { categories: CategoryState }) => state.categories.status;

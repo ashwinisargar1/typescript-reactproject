@@ -92,12 +92,16 @@ const CategoryPieChart: React.FC = () => {
                     <Tooltip
                         formatter={(value: any) => formatCurrency(Number(value))}
                         contentStyle={{
-                            background: 'rgba(20, 20, 40, 0.95)',
+                            backgroundColor: 'rgba(20, 20, 40, 0.95)',
                             border: '1px solid rgba(255, 255, 255, 0.1)',
                             borderRadius: '0.5rem',
-                            color: '#fff',
+                        }}
+
+                        itemStyle={{
+                            color: '#ffffff',
                         }}
                     />
+
                     <Legend />
                 </PieChart>
             </ResponsiveContainer>
