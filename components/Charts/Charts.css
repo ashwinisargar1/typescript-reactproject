@@ -1,0 +1,75 @@
+.chart-card {
+    margin-bottom: 2rem;
+}
+
+.chart-header-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.chart-title {
+    margin: 0;
+    font-size: 1.25rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.chart-toggle {
+    display: flex;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 0.25rem;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.toggle-btn {
+    padding: 0.4rem 1rem;
+    border: none;
+    background: transparent;
+    color: #888;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 0.4rem;
+    transition: all 0.3s ease;
+}
+
+.toggle-btn.active {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+}
+
+.toggle-btn:hover:not(.active) {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.chart-empty {
+    text-align: center;
+    padding: 3rem 1rem;
+    color: #888;
+}
+
+.recharts-text {
+    fill: #fff;
+    font-size: 0.75rem;
+}
+
+.recharts-legend-item-text {
+    color: #fff !important;
+}
+
+@media (max-width: 768px) {
+    .chart-card {
+        padding: 1rem;
+    }
+
+    .chart-title {
+        font-size: 1.125rem;
+    }
+}
